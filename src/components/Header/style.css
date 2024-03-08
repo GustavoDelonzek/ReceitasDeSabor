@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.navbar .container .logo-titulo{
+    font-size: 2.2rem;
+    
+}
+
+.navbar .container .link-navegacao{
+    font-size: 2rem;
+    color: #d8b042;
+    font-weight: 600;
+}
+
+.navbar .titulo-modificar{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #d8b042;
+    padding: 8px;
+}
+
+@media (max-width: 700px){
+    .navbar .container .link-navegacao{
+        font-size: 1.4rem;
+        color: #d8b042;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.search-form {
+  width: 100vw;
+  height: 100vh;
+}
+
+.search-form .form-control {
+  font-size: 1.6rem;
+
+}
+
+.pesquisa {
+  width: 60%;
+}
+
+.input-group {
+  height: 100%;
+
+}
+
+
+input::placeholder {
+  padding: 3px;
+  font-size: 1.6rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.home-principal {
+  background-image: url(../../assets/images/DrawKit-cooking-kitchen-food-vector-illustrations-01.svg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card-receitas .card {
+  border-radius: 3%;
+}
+
+.borda {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.grid-receita {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-receita .card {
+  width: 100%;
+  -webkit-box-shadow: 9px 7px 11px -7px rgba(51, 47, 51, 0.65);
+  -moz-box-shadow: 9px 7px 11px -7px rgba(51, 47, 51, 0.65);
+  box-shadow: 9px 7px 11px -7px rgba(51, 47, 51, 0.65);
+  height: 100%;
+}
+
+.grid-receita .card-img-top {
+  object-fit: cover;
+  height: 250px;
+}
+
+.grid-receita .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avaliacao {
+  font-size: 1.5rem;
+}
+
+.erro {
+  height: 100vh;
+}
+
+.grid-receita .card-receitas .card {
+  min-height: 46rem;
+}
+
+.grid-receita .card-receitas .card .card-img-top {
+  flex-grow: 0;
+}
+
+.grid-receita .card-receitas .card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid-receita .card-receitas .butao-saiba {
+  padding: 10px;
+  font-size: 1.4rem;
+  border-radius: 16%;
+  margin: 7px;
+}
+
+.grid-receita .card-receitas .titulo-card-receita {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.grid-receita .card-receitas .previa-instrucao {
+  font-size: 1.6rem;
+}
+
+.grid-receita .mostre-mais {
+  font-size: 1.5rem;
+}
+
+.home-principal .form-control {
+  background-color: #ffffffa3;
+}
+
+.home-principal .form-control:enabled {
+  background-color: #ffffffa3;
+}
+
+.titulo-lista-receita {
+  font-size: 3.6rem;
+  color: #d8b042;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+}
+
+.fa-search {
+  width: 100%;
+}
+
+@media (max-width: 628px) {
+  .home-principal {
+    background-image: url(../../assets/images/DrawKit-cooking-kitchen-food-vector-illustrations-01.svg);
+    max-width: 100%;
+    max-height: 800px;
+    background-size: cover;
+    background-size: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
+
+
+@media (max-width: 526px) {
+  .home-principal {
+    background-image: url(../../assets/images/DrawKit-cooking-kitchen-food-vector-illustrations-01.svg);
+    height: 7000px;
+    background-size: cover;
+    background-size: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 430px) {
+  .home-principal {
+    background-image: url(../../assets/images/DrawKit-cooking-kitchen-food-vector-illustrations-01.svg);
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400..700&display=swap');
+
+@-webkit-keyframes flip-vertical-fwd {
+    0% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) rotateY(180deg);
+              transform: translateZ(160px) rotateY(180deg);
+    }
+  }
+  @keyframes flip-vertical-fwd {
+    0% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) rotateY(180deg);
+              transform: translateZ(160px) rotateY(180deg);
+    }
+  }
+  
+
+  @-webkit-keyframes flip-vertical-bck {
+    0% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-260px) rotateY(-180deg);
+              transform: translateZ(-260px) rotateY(-180deg);
+    }
+  }
+  @keyframes flip-vertical-bck {
+    0% {
+      -webkit-transform: translateZ(0) rotateY(0);
+              transform: translateZ(0) rotateY(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-260px) rotateY(-180deg);
+              transform: translateZ(-260px) rotateY(-180deg);
+    }
+  }
+  
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.home-detalhes h2,
+.home-detalhes h3,
+.home-detalhes h4,
+.home-detalhes h5,
+.home-detalhes h6 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+}
+
+.home-detalhes li {
+    font-family: "Noto Serif Khojki", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #433E3F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.borda {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.container-imagem {
+    min-height: 70vh;
+}
+
+.imagem-detalhes {
+    border-radius: 3%;
+    min-width: 90%;
+    max-height: 80vh;
+}
+
+.home-detalhes {
+    min-height: 100vh;
+    background-color: #F7F3EF;
+
+}
+
+.titulo-receita {
+    font-size: 4rem;
+    color: #d8b042;
+    padding: 3%;
+}
+
+.ingredientes-lista {
+    font-size: 1.5rem;
+    text-align: justify;
+
+}
+
+.instrucao-receita {
+    font-size: 1.6rem;
+}
+
+
+.lista-nao-ordenada {
+    list-style-type: none;
+}
+
+.home-detalhes .preparo-receita {
+    min-height: 70vh;
+}
+
+.titulo-como-fazer {
+    font-size: 3.6rem;
+    color: #d8b042;
+    border-top: 2px solid #d8b042;
+}
+
+.curtir-receita {
+    border-top: 2px solid #d8b042;
+}
+
+
+.curtir-receita .botao-curtida {
+    margin: 1%;
+    height: 100%;
+    padding: 10px 15px;
+    font-size: 2rem;
+    border-radius: 50%;
+    transform: all 0.7s ease-out;
+    cursor: pointer;
+}
+
+.curtir-receita .active{
+    -webkit-animation: flip-vertical-bck 0.7s ease-out both;
+	        animation: flip-vertical-bck 0.7s ease-out both;
+}
+
+.curtir-receita .desativado{
+    -webkit-animation: flip-vertical-fwd 0.7s ease-out both;
+	        animation: flip-vertical-fwd 0.7s ease-out both;
+    
+}
+
+.preparo-receita {
+    color: #433E3F;
+}
+
+@media (max-width: 600px){
+    .ingredientes-lista {
+        font-size: 1.4rem;
+        text-align: start;
+    
+    }
+    
+    .instrucao-receita {
+        font-size: 1.4rem;
+    }
+
+    .titulo-como-fazer {
+        font-size: 3rem;
+        color: #d8b042;
+        border-top: 2px solid #d8b042;
+    }
+}
+
+
+@media (max-width: 700px){
+    .container-imagem {
+        min-height: 30vh;
+    }
+    .titulo-receita {
+        font-size: 4rem;
+        color: #d8b042;
+        margin-top: 35px;
+        
+    }
+}
+
+@media (min-width:1300px){
+    .home-detalhes .preparo-receita {
+        min-height: 100%;
+    }
+}
